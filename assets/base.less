@@ -675,6 +675,7 @@ a.img:hover img{
 		font-size: 16px;
 		border-bottom: 1px solid #C4C4C4;
 		vertical-align: middle;
+		margin-bottom: 23px;
 		&::before{
 			margin-right: 8px;
 			width: 4px;
@@ -1481,6 +1482,37 @@ a.img:hover img{
 				margin-bottom: 45px;
 			}
 		}
+	}
+}
+
+.order-detail{
+	padding-bottom: 40px;
+	.rows{
+		display: flex;
+		.wrapper{
+			flex: 1;
+			display: block;
+			.title{
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			.flex{
+				display: flex;
+			}
+			.row{
+				flex: 1;
+			}
+		}
+		.img{
+			width: 160px;
+			img{
+				max-width: 100%;
+				border-radius: 6px;
+			}
+		}
+	}
+	.row{
+		color: #666666;
 	}
 }
 
