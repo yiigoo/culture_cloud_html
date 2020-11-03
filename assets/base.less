@@ -103,6 +103,9 @@ a{
 		.item{
 			width: 40px;
 			text-align: center;
+			&.active{
+				background: rgba(0, 0, 0, 0.5);
+			}
 		}
 		a{
 			display: block;
@@ -113,7 +116,33 @@ a{
 				text-decoration: none;
 			}
 		}
+		.item-search{
+			position: relative;
+			z-index: 3;
+			.search-box{
+				padding: 13px 20px;
+				width: 360px;
+				height: 50px;
+				background: rgba(0, 0, 0, 0.9);
+				position: absolute;
+				top: 50px;
+				right:0;
+				input{
+					width: 100%;
+					background: none;
+					border: none;
+					border-bottom: 1px solid #999;
+					color: #fff;
+					padding: 0 5px;
+					&:focus{
+						outline: none;
+					}
+				}
+			}
+		}
 	}
+
+	
 }
 .banner{
 	margin-top: -50px;
@@ -1340,6 +1369,9 @@ a{
 		img{
 			max-width: 100%;
 		}
+	}
+	.imgx200{
+		width: 200px;
 	}
 	.title{
 		font-size: 18px;

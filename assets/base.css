@@ -98,6 +98,9 @@ a:hover {
   width: 40px;
   text-align: center;
 }
+.header .bar .item.active {
+  background: rgba(0, 0, 0, 0.5);
+}
 .header .bar a {
   display: block;
   line-height: 50px;
@@ -106,6 +109,30 @@ a:hover {
 .header .bar a:hover {
   background: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+}
+.header .bar .item-search {
+  position: relative;
+  z-index: 3;
+}
+.header .bar .item-search .search-box {
+  padding: 13px 20px;
+  width: 360px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+.header .bar .item-search .search-box input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #fff;
+  padding: 0 5px;
+}
+.header .bar .item-search .search-box input:focus {
+  outline: none;
 }
 .banner {
   margin-top: -50px;
@@ -1256,6 +1283,9 @@ a:hover {
 }
 .figure-list .img img {
   max-width: 100%;
+}
+.figure-list .imgx200 {
+  width: 200px;
 }
 .figure-list .title {
   font-size: 18px;
