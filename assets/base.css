@@ -147,18 +147,13 @@ a.img:hover img {
 .header .bar .item-search .search-box input:focus {
   outline: none;
 }
-.banner {
+.page-banner {
   margin-top: -50px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.banner .static {
+.page-banner .static {
   height: 240px;
-  position: relative;
-  overflow: hidden;
-}
-.banner .static img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .page-conainter {
   width: 1180px;
