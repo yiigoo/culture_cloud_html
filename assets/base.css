@@ -1355,6 +1355,7 @@ a.img:hover img {
 .page-other {
   width: 900px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 .page-other .page-other-title {
   font-weight: bold;
