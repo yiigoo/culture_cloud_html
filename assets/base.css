@@ -1,5 +1,5 @@
 html {
-  background-color: #eee;
+  background-color: #f2ecdf;
 }
 body {
   color: #000;
@@ -44,6 +44,19 @@ a:hover {
   content: " ";
   clear: both;
   height: 0;
+}
+a.img img,
+.img a img {
+  transition: 0.5s opacity;
+}
+a.img:hover img {
+  opacity: 0.9;
+}
+.img a:hover img {
+  opacity: 0.9;
+}
+.editor p {
+  margin-bottom: 20px;
 }
 .header {
   min-height: 50px;
@@ -1004,6 +1017,43 @@ a:hover {
   font-weight: bold;
   color: #000;
 }
+.page-tabs-wrapper {
+  background-color: #fff;
+  height: 41px;
+  line-height: 40px;
+  border-bottom: 1px solid #C4C4C4;
+}
+.page-tabs-wrapper .item {
+  float: left;
+  min-width: 80px;
+  padding: 0 5px;
+  margin-right: 20px;
+  color: #666666;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.page-tabs-wrapper .item.active {
+  font-weight: bold;
+  color: #000;
+}
+.page-tabs-wrapper .item.active::before {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  width: 80px;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #F36A1C;
+}
+.page-tabs-wrapper .item:hover {
+  font-weight: bold;
+  color: #000;
+}
 .person-list .item {
   height: 320px;
   width: 280px;
@@ -1301,6 +1351,94 @@ a:hover {
 .message-list .item .sub {
   margin-top: 5px;
   color: #999;
+}
+.page-other {
+  width: 900px;
+  margin: 0 auto;
+}
+.page-other .page-other-title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 0;
+}
+.page-other .links-list .item {
+  width: 200px;
+  float: left;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  text-align: center;
+}
+.page-other .links-list .item .img {
+  height: 80px;
+}
+.page-other .links-list .item .img img {
+  line-height: 80px;
+  max-width: 100%;
+  max-height: 80px;
+}
+.page-other .links-list .item .name {
+  margin-top: 8px;
+  font-weight: bold;
+  height: 42px;
+  overflow: hidden;
+  line-height: 21px;
+}
+.page-other .links-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+.page-other .sitemap-list {
+  padding-top: 30px;
+  border-top: 1px solid #C4C4C4;
+}
+.page-other .sitemap-list .item {
+  width: 20%;
+  float: left;
+  padding-bottom: 30px;
+}
+.page-other .sitemap-list .title {
+  font-weight: bold;
+}
+.page-other .sitemap-list ul {
+  margin-top: 7px;
+  padding-right: 15px;
+}
+.page-other .sitemap-list li {
+  margin-bottom: 5px;
+}
+.page-other .sitemap-list li:before {
+  content: " ";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.page-other .contact {
+  padding-top: 30px;
+  border-top: 1px solid #C4C4C4;
+  display: flex;
+}
+.page-other .contact .right {
+  width: 480px;
+}
+.page-other .contact .right img {
+  display: block;
+  font-size: 0;
+  border-radius: 6px;
+}
+.page-other .contact .left {
+  padding-right: 20px;
+  flex: 1;
+}
+.page-other .contact .left .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.page-other .contact .left .text {
+  margin-bottom: 45px;
 }
 .footer {
   background: #5B5B5B;
