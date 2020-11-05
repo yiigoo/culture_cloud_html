@@ -1,3 +1,8 @@
+.size50 {
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -47,6 +52,12 @@
 }
 .icon-decorate {
   background: url('icon/icon-decorate.svg');
+  width: 39px;
+  height: 34px;
+  background-size: contain;
+}
+.icon-decorate-brand {
+  background: url('icon/icon-decorate-brand.svg');
   width: 39px;
   height: 34px;
   background-size: contain;
@@ -134,4 +145,26 @@
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
+}
+.icon-arrow-swiper-left,
+.icon-arrow-swiper-right {
+  background: url('icon/icon-arrow-swiper.svg');
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+.icon-arrow-swiper-left.disabled,
+.icon-arrow-swiper-right.disabled {
+  opacity: 0.8;
+  cursor: default;
+}
+.icon-arrow-swiper-right {
+  transform: rotate(180deg);
+}
+.icon-arrow-right {
+  background: url('icon/icon-arrow-right.svg');
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
 }
